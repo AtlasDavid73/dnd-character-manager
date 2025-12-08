@@ -3,6 +3,7 @@ D&D character sheet web application Git workflow practice.
 
 ## Developer 
 David Smith (@AtlasDavid73)
+Garrett Lowry 
 
 ## Project 
 A web application for creating and managing Dungeons & Dragons character sheets.
