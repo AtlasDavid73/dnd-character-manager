@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Builder - D&D Manager</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="D&D Logo" class="nav-logo">
+                <h1 class="logo">D&D Manager</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="character.html" class="active">Characters</a></li>
+                <li><a href="spells.html">Spells</a></li>
+                <li><a href="monsters.html">Monsters</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header with Image -->
+    <section class="page-header character-header">
+        <img src="assets/images/character-banner.jpg" alt="Character Creation" class="header-bg">
+        <div class="header-content" style="color: black;">
+            <h2>Character Builder</h2>            
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="container main-content">
+        
+        <!-- Info Section with Images -->
+        <div class="info-banner">
+            <img src="assets/images/character-info.png" alt="Character Classes" class="info-image">
+            <div class="info-text">
+                <h3>Create Your Hero</h3>
+                <p>Choose from 9 races and 12 classes to build your perfect D&D character. Each combination offers unique abilities, proficiencies, and playstyle options.</p>
+            </div>
+        </div>
+
+        <!-- Character Form -->
+        <div class="form-section">
+            <div class="form-container">
+                <h3 class="form-title">Character Details</h3>
+                <form id="character-form">
+                    <div class="form-group">
+                        <label for="char-name">Character Name:</label>
+                        <input type="text" id="char-name" placeholder="Enter your character's name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="race-select">Race:</label>
+                            <select id="race-select" required>
+                                <option value="">Select a race...</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="class-select">Class:</label>
+                            <select id="class-select" required>
+                                <option value="">Select a class...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span>⚔️</span> Create Character
+                    </button>
+                </form>
+            </div>
+
+            <!-- Preview Images Grid -->
+            <div class="preview-gallery">
+                <h4>Character Inspiration</h4>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="assets/images/char-preview-1.png" alt="Warrior" class="gallery-image">
+                        <figcaption>Warrior</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="assets/images/char-preview-2.png" alt="Wizard" class="gallery-image">
+                        <figcaption>Wizard</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="assets/images/char-preview-3.png" alt="Rogue" class="gallery-image">
+                        <figcaption>Rogue</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="assets/images/char-preview-4.png" alt="Cleric" class="gallery-image">
+                        <figcaption>Cleric</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- Character Display -->
+        <div id="character-display" class="character-result" style="display: none;">
+            <div class="result-header">
+                <img src="assets/images/character-sheet.jpg" alt="Character Sheet" class="result-banner">
+                <h3>Character Created!</h3>
+            </div>
+            <div id="character-details"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 D&D Character Manager</p>
+    </footer>
+
+    <script src="assets/js/character.js"></script>
+</body>
+</html>
